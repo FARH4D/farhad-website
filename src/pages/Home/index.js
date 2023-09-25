@@ -1,7 +1,12 @@
+import NavMenu from '../NavMenu'
 import './index.scss'
 
 const home = () => {
-    return <>Hello hello hello</>
+    return (
+        <>
+            <NavMenu />
+        </>
+    )
 }
 
 export default home

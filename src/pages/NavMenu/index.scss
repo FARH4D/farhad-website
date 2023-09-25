@@ -1,0 +1,25 @@
+.nav-bar {
+
+    background: rgb(64, 64, 68);
+    
+    height: 100%;
+
+    top: 0;
+    position: absolute;
+    min-width: 120px;
+    right: 0;
+    
+
+
+    .logo {
+        display: block;
+        
+
+        img {
+            display: block;
+            margin-left: auto;
+            width: 200px;
+        }
+
+    }
+}
