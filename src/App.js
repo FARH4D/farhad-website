@@ -1,17 +1,16 @@
-import './App.scss';
+import "./App.scss";
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
-import ParticlesBackground from './pages/particles';
+import ParticlesBackground from "./pages/particles";
+import NavMenu from "./pages/NavMenu";
 
 function App() {
   return (
-    <div className='App' width = {5000}>
-        <ParticlesBackground />
-        <div className='particlesheader'>
-          <h1>Particles.js</h1>
-        </div>
+    <div className="App">
+      <ParticlesBackground />
+      <NavMenu />
     </div>
   );
 }
 
-export default App
+export default App;
