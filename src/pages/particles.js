@@ -28,13 +28,13 @@ const ParticlesBackground = () => {
                     }
                   },
                   "color": {
-                    "value": "#1b1e34"
+                    "value": "#020207"
                   },
                   "shape": {
                     "type": "polygon",
                     "stroke": {
                       "width": 0,
-                      "color": "#000"
+                      "color": "#fffff"
                     },
                     "polygon": {
                       "nb_sides": 6

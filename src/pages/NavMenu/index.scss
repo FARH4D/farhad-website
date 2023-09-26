@@ -6,32 +6,89 @@
     right: 0;
     margin: 0 auto;
     top: 10px;
-    width: 590px; 
+    width: 540px;
     border-radius: 10px;
-    min-width: 580px;
-  
     display: flex;
     justify-content: space-around;
-  
-    align-items: center; 
+    align-items: center;
   
     .nav-links {
       display: flex;
-      gap: 20px; // Space between the buttons
+      gap: 60px; // Space between the buttons
   
       a {
         color: #fff;
         text-decoration: none;
         font-weight: bold;
         font-size: 16px;
-
         display: flex;
-        align-items: center; 
-
-         svg {
-            margin-right: 8px; // The space between the icon and text
+        align-items: center;
+        position: relative; /* Added */
+  
+        svg {
+          margin-right: 8px; // The space between the icon and text
         }
-      
+  
+        i {
+          transition: all 0.3s ease-out;
+        }
+  
+        &:hover {
+          color: #7815D3;
+          svg {
+            opacity: 0;
+          }
+  
+          &::after {
+            opacity: 1;
+            transform: translateX(-50%);
+            left: 50%;
+            top: 30%;
+          }
+        }
+  
+        &::after { // The animation of word fading away after the icon is hovered away from
+          content: '';
+          font-size: 20px;
+          letter-spacing: 2px;
+          position: absolute;
+          left: 50%;
+          top: 100%; 
+          transform: translate(-50%, -50%);
+          display: block;
+          opacity: 0;
+          transition: all 0.3s ease-out;
+        }
+  
+        &:first-child {
+          &::after {
+            content: 'HOME';
+          }
+        }
+      }
+  
+      a.about {
+        &::after {
+          content: 'ABOUT';
+        }
+      }
+  
+      a.projects {
+        &::after {
+          content: 'PROJECTS';
+        }
+      }
+
+      a.linkedIn {
+        &::after {
+          content: 'LINKEDIN';
+        }
+      }
+
+      a.github {
+        &::after {
+          content: 'GITHUB';
+        }
       }
     }
   }
