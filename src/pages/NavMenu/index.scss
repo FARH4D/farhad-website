@@ -34,7 +34,7 @@
         }
   
         &:hover {
-          color: #7815D3;
+          color: #ffffff;
           svg {
             opacity: 0;
           }
@@ -53,11 +53,12 @@
           letter-spacing: 2px;
           position: absolute;
           left: 50%;
-          top: 100%; 
+          top: 50%; 
           transform: translate(-50%, -50%);
           display: block;
           opacity: 0;
           transition: all 0.3s ease-out;
+          pointer-events: none;
         }
   
         &:first-child {
