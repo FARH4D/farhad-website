@@ -1,25 +1,38 @@
 .nav-bar {
-
-    background: #191B1C;
-    
-    height: 100%;
-
-    top: 0;
+    background: #191b1c;
+    height: 70px;
     position: absolute;
-    min-width: 120px;
+    left: 0;
     right: 0;
-    
+    margin: 0 auto;
+    top: 10px;
+    width: 590px; 
+    border-radius: 10px;
+    min-width: 580px;
+  
+    display: flex;
+    justify-content: space-around;
+  
+    align-items: center; 
+  
+    .nav-links {
+      display: flex;
+      gap: 20px; // Space between the buttons
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
 
+        display: flex;
+        align-items: center; 
 
-    .logo {
-        display: block;
-        
-
-        img {
-            display: block;
-            margin-left: auto;
-            width: 200px;
+         svg {
+            margin-right: 8px; // The space between the icon and text
         }
-
+      
+      }
     }
-}
+  }
+  
