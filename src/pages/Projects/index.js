@@ -1,11 +1,11 @@
 import './index.scss'
 
-const Home = () => {
-    return  (
+const Projects = () => {
+    return (
         <div className='home-container'>
             <div className='text'>
-                <h1> Hello, welcome to my website. </h1>
-        
+                <h1> Hello dudeeee </h1>
+
             </div>
 
 
@@ -14,4 +14,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Projects
