@@ -1,6 +1,28 @@
-.home-container {
+.container {
+    will-change: contents;
+    height: 90%;
+    position: absolute;
+    font-size: 25px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    transform-style: preserve-3d;
+    opacity: 0;
+
+}
+
+.projects-page {
+
     h1 {
-        font-size: 40px;
-        color: white;
+        margin-bottom: 70px;
     }
+
+
+    p {
+        animation: pulse 1s;
+        animation-delay: 3s;
+    }
+
 }
