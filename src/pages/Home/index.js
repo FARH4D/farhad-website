@@ -5,14 +5,14 @@ import { motion } from 'framer-motion'
 const Home = () => {
     return  (
         <>
-        <motion.div className='home-container'
-            transition={{delay: 2}}
-            initial= {{opacity: 0, y: 20}}
-            animate = {{opacity: 1, y: 20}}
-            exit={{opacity: 0, y: 20}}
+        <motion.div className='container1 home-page'
+            transition={{delay: 3}}
+            initial= {{opacity: 0}}
+            animate = {{opacity: 1}}
+            exit={{opacity: 0}}
         >
             <div className='text'>
-                <h1> Hello, welcome to my website. </h1>
+                <h1> Hi, I'm Farhad </h1>
         
             </div>
 
