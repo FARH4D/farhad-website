@@ -30,6 +30,7 @@ const TitleAnimate = ({children}) => {
                     animate() 
             }}
             onAnimationComplete={() => setIsPlaying(false)}
+            style={{display: 'inline-block', fontSize: '100px'}}
         >
             {children}
         </motion.span>

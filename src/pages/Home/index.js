@@ -2,6 +2,7 @@ import './index.scss'
 import Loader from 'react-loaders'
 import TitleAnimate from './titleAnimate'
 import { motion, useAnimationControls } from 'framer-motion'
+import { Typewriter, Cursor } from 'react-simple-typewriter'
 
 
 const Home = () => {
@@ -13,12 +14,15 @@ const Home = () => {
         controls.start({
             transform: [
                 "scale3d(1, 1, 1)",
-                "scale3d(1.4, 0.55, 1)",
-                "scale3d(0.75, 1.25, 1)",
-                "scale3d(1.25, 0.85, 1)",
-                "scale3d(0.9, 1.05, 1)",
+                "scale3d(1.3, 0.6, 1)",
+                "scale3d(0.7, 1.3, 1)",
+                "scale3d(1.25, 0.9, 1)",
+                "scale3d(0.85, 1.05, 1)",
                 "scale3d(1, 1, 1)",
-              ]
+              ],
+              transition: {
+                times: [0, 0.5, 0.7, 0.8, 0.9, 1]
+              }
         })  
       };
     
@@ -40,13 +44,22 @@ const Home = () => {
                     )
                 })}
 
-                <h1> I'm a  </h1>
-                <p> I am currently a third year student studying Computer Science BSc.</p>
-                <p> I </p>
+                <h1> I'm a&nbsp;
+                <span style={{ fontWeight: 'bold', color: '#6c0add', fontSize: '60px' }}>
+                    <Typewriter
+                        words={['Student', 'Programmer', 'Embedded Software Engineer', 'Tech Enthusiast', 'Fitness Addict', 'Passionate Learner']}
+                        loop={true}
+                        cursor
+                        cursorStyle='|'
+                    />
+                </span>
+
+
+                </h1>
+
+                
 
             </div>
-
-
 
         </motion.div>
         <motion.div
