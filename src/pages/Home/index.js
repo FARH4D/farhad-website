@@ -1,8 +1,28 @@
 import './index.scss'
 import Loader from 'react-loaders'
-import { motion } from 'framer-motion'
+import TitleAnimate from './titleAnimate'
+import { motion, useAnimationControls } from 'framer-motion'
+
 
 const Home = () => {
+
+    const title = "Hi, I'm Farhad".split("");
+    const controls = useAnimationControls();
+    
+    const animate = () => {
+        controls.start({
+            transform: [
+                "scale3d(1, 1, 1)",
+                "scale3d(1.4, 0.55, 1)",
+                "scale3d(0.75, 1.25, 1)",
+                "scale3d(1.25, 0.85, 1)",
+                "scale3d(0.9, 1.05, 1)",
+                "scale3d(1, 1, 1)",
+              ]
+        })  
+      };
+    
+    
     return  (
         <>
         <motion.div className='container1 home-page'
@@ -12,8 +32,18 @@ const Home = () => {
             exit={{opacity: 0}}
         >
             <div className='text'>
-                <h1> Hi, I'm Farhad </h1>
-        
+                {title.map((letter, index) => {
+                    return (
+                        <TitleAnimate key = {index}>
+                            {letter}
+                        </TitleAnimate>
+                    )
+                })}
+
+                <h1> I'm a  </h1>
+                <p> I am currently a third year student studying Computer Science BSc.</p>
+                <p> I </p>
+
             </div>
 
 

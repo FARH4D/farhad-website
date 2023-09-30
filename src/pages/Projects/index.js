@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <>
         <motion.div
-            className='container projects-page'
+            className='container2 projects-page'
             transition={{delay: 3}}
             initial= {{opacity: 0}}
             animate = {{opacity: 1}}
