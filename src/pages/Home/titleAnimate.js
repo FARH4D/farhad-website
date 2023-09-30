@@ -3,10 +3,8 @@ import { useState } from "react";
 
 const TitleAnimate = ({children}) => {
 
-    const title = "Hi, I'm Farhad".split("");
     const controls = useAnimationControls();
     const [isPlaying, setIsPlaying] = useState(false);
-
 
     const animate = () => {
         controls.start({

@@ -3,30 +3,13 @@ import Loader from 'react-loaders'
 import TitleAnimate from './titleAnimate'
 import { motion, useAnimationControls } from 'framer-motion'
 import { Typewriter, Cursor } from 'react-simple-typewriter'
+import { MdEmail } from 'react-icons/md'
 
 
 const Home = () => {
 
     const title = "Hi, I'm Farhad".split("");
-    const controls = useAnimationControls();
-    
-    const animate = () => {
-        controls.start({
-            transform: [
-                "scale3d(1, 1, 1)",
-                "scale3d(1.3, 0.6, 1)",
-                "scale3d(0.7, 1.3, 1)",
-                "scale3d(1.25, 0.9, 1)",
-                "scale3d(0.85, 1.05, 1)",
-                "scale3d(1, 1, 1)",
-              ],
-              transition: {
-                times: [0, 0.5, 0.7, 0.8, 0.9, 1]
-              }
-        })  
-      };
-    
-    
+
     return  (
         <>
         <motion.div className='container1 home-page'
@@ -47,19 +30,21 @@ const Home = () => {
                 <h1> I'm a&nbsp;
                 <span style={{ fontWeight: 'bold', color: '#6c0add', fontSize: '60px' }}>
                     <Typewriter
-                        words={['Student', 'Programmer', 'Embedded Software Engineer', 'Tech Enthusiast', 'Fitness Addict', 'Passionate Learner']}
+                        words={['Student', 'Programmer', 'Tech Enthusiast', 'Fitness Addict', 'Embedded Software Engineer', 'Passionate Learner']}
                         loop={true}
                         cursor
                         cursorStyle='|'
                     />
                 </span>
-
-
                 </h1>
-
-                
-
             </div>
+            
+            <a href='mailto:Farhad.Ahmedd@hotmail.com' target='_blank' className='contactButton' style={{textDecoration:'none'}}>
+                <div>
+                <p> Contact me!&nbsp;</p> <MdEmail style={{ fontSize: '50px'}} />
+                </div>
+            </a>
+            
 
         </motion.div>
         <motion.div
