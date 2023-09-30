@@ -35,7 +35,7 @@ const Home = () => {
                 {title.map((letter, index) => {
                     return (
                         <TitleAnimate key = {index}>
-                            {letter}
+                            {letter === " " ? "\u00A0" : letter} 
                         </TitleAnimate>
                     )
                 })}
