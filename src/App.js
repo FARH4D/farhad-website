@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import ParticlesBackground from "./pages/particles";
 import Layout from "./pages/Layout";
 import Projects from "./pages/Projects";
+import AboutMe from "./pages/About";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element = {<Home />}/>
             <Route path ="projects" element = {<Projects />}/>
-
+            <Route path ="about" element = {<AboutMe />}/>
           </Route>
         </Routes>
     </div>

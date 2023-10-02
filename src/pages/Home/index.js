@@ -30,7 +30,7 @@ const Home = () => {
                 <h1> I'm a&nbsp;
                 <span style={{ fontWeight: 'bold', color: '#6c0add', fontSize: '60px' }}>
                     <Typewriter
-                        words={['Student', 'Programmer', 'Tech Enthusiast', 'Fitness Addict', 'Embedded Software Engineer', 'Passionate Learner']}
+                        words={['Student', 'Programmer', 'Tech Enthusiast', 'Fitness Addict', 'Aspiring Software Engineer ', 'Passionate Learner']}
                         loop={true}
                         cursor
                         cursorStyle='|'
