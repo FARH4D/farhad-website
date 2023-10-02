@@ -15,6 +15,10 @@ import powerautomateLogo from '../logos/powerAutomate.png'
 import pythonLogo from '../logos/python.svg'
 import reactLogo from '../logos/react.svg'
 import sassLogo from '../logos/sass.svg'
+import arduinoLogo from '../logos/arduino.svg'
+import raspberrypiLogo from '../logos/raspberrypi.svg'
+import ubuntuLogo from '../logos/ubuntu.png'
+import tensorflowLogo from '../logos/tensorflow.svg'
 
 const AboutMe = () => {
     return (
@@ -42,10 +46,91 @@ const AboutMe = () => {
                 </p>
 
 
-                <img src={javaLogo}></img> <img src={sqlLogo} style={{width: '96px', height: '50px', marginBottom: '10px'}}></img>
-                
+                <div className='logos-row'>
+                    <div className='logo'>
+                        <img src={javaLogo} alt='Java' />
+                        <span>Java &nbsp;&nbsp;</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={sqlLogo} alt='SQL' />
+                        <span>SQL</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={javascriptLogo} alt='JavaScript' />
+                        <span>JavaScript</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={htmlLogo} alt='HTML' />
+                        <span>HTML</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={cssLogo} alt='CSS' />
+                        <span>CSS</span>
+                    </div>
+                </div>
 
+                <div className='logos-row'>
+                    <div className='logo'>
+                        <img src={arduinoLogo} alt='Arduino' />
+                        <span>Arduino</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={bootstrapLogo} alt='Bootstrap' />
+                        <span>Bootstrap&nbsp;</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={gitLogo} alt='Git' />
+                        <span>Git</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={phpLogo} alt='PHP' />
+                        <span>PHP</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={postmanLogo} alt='Postman' />
+                        <span>Postman</span>
+                    </div>
+                </div>
+
+                <div className='logos-row'>
+                    <div className='logo'>
+                        <img src={powerappsLogo} alt='Microsoft Power Apps' />
+                        <span>Power Apps</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={powerautomateLogo} alt='Microsoft Power Automate' />
+                        <span>Power Automate</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={pythonLogo} alt='Python' />
+                        <span>Python</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={tensorflowLogo} alt='TensorFlow' />
+                        <span>TensorFlow</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={reactLogo} alt='React' />
+                        <span>React</span>
+                    </div>
+                </div>
+
+                <div className='logos-row'>
+                    <div className='logo'>
+                        <img src={ubuntuLogo} alt='Ubuntu' />
+                        <span>Ubuntu</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={raspberrypiLogo} alt='Raspberry Pi' />
+                        <span>Raspberry Pi</span>
+                    </div>
+                    <div className='logo'>
+                        <img src={sassLogo} alt='Sass' />
+                        <span>Sass</span>
+                    </div>
+                </div>
             </div>
+
         </motion.div>
         <motion.div
             transition={{delay: 0.3}}
@@ -58,5 +143,4 @@ const AboutMe = () => {
         </>
     )
 }
-
 export default AboutMe
