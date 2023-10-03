@@ -1,6 +1,6 @@
 import './index.scss'
 import Loader from 'react-loaders'
-import TitleAnimate from './titleAnimate'
+import TitleAnimate from '../titleAnimate'
 import { motion, useAnimationControls } from 'framer-motion'
 import { Typewriter, Cursor } from 'react-simple-typewriter'
 import { MdEmail } from 'react-icons/md'

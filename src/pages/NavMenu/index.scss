@@ -15,7 +15,7 @@
   
     .nav-links {
       display: flex;
-      gap: 60px; // Space between the buttons
+      gap: 60px;
   
       a {
         color: #fff;
@@ -24,10 +24,10 @@
         font-size: 16px;
         display: flex;
         align-items: center;
-        position: relative; /* Added */
+        position: relative;
   
         svg {
-          margin-right: 8px; // The space between the icon and text
+          margin-right: 8px;
         }
   
         i {
@@ -48,7 +48,7 @@
           }
         }
   
-        &::after { // The animation of word fading away after the icon is hovered away from
+        &::after {
           content: '';
           font-size: 20px;
           letter-spacing: 2px;

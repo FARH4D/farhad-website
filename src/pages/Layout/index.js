@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom'
 import NavMenu from '../NavMenu'
-import './index.scss'
 
 const Layout = () => {
   return (
