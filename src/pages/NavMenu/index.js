@@ -12,8 +12,8 @@ const NavMenu = () => (
       <NavLink exact = "true" activeclassname = "active" to = "/"> <AiFillHome style={{ fontSize: '35px' }} /> </NavLink>
       <NavLink exact = "true" activeclassname = "active" className="about" to="/about"> <BsFillFilePersonFill style={{ fontSize: '35px' }} /></NavLink>
       <NavLink exact = "true" activeclassname = "active" className="projects" to="/projects"> <RiComputerFill style={{ fontSize: '35px' }} /> </NavLink>
-      <a href="https://www.linkedin.com/in/farhad-ahmed-8a1a30227/" target="_blank" activeclassname = "active" className="linkedIn"> <AiFillLinkedin style={{ fontSize: '35px' }} /> </a>
-      <a href="https://github.com/FARH4D" target="_blank" activeclassname = "active" className="github"><AiFillGithub style={{ fontSize: '40px' }} /></a>
+      <a href="https://www.linkedin.com/in/farhad-ahmed-8a1a30227/" target="_blank" rel="noreferrer" activeclassname = "active" className="linkedIn"> <AiFillLinkedin style={{ fontSize: '35px' }} /> </a>
+      <a href="https://github.com/FARH4D" target="_blank" activeclassname = "active" rel="noreferrer" className="github"><AiFillGithub style={{ fontSize: '40px' }} /></a>
     </div>
 
   </div>
